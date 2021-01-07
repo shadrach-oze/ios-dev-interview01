@@ -30,6 +30,10 @@ extension MianUseCase: MianUseCaseType {
     // MARK: - Function to fetch job shedules
 
     func fetchUsersList() -> AnyPublisher<Result<[JsonPlaceholderModel], APIError>, Never> {
-        return apiClient.execute().
+        return apiClient
+            .execute()
+            .subscribe(on: Scheduler.backgroundWorkScheduler)
+            .receive(on: Scheduler.mainScheduler)
+            .eraseToAnyPublisher()
     }
 }

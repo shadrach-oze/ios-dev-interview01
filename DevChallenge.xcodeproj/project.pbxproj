@@ -15,6 +15,7 @@
 		183CA8FC25A75614004745D4 /* MianUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183CA8FB25A75614004745D4 /* MianUseCase.swift */; };
 		183CA90625A756B3004745D4 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183CA90525A756B3004745D4 /* APIClient.swift */; };
 		183CA90D25A75B96004745D4 /* Schedular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183CA90C25A75B96004745D4 /* Schedular.swift */; };
+		183CA91625A7680C004745D4 /* Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183CA91525A7680C004745D4 /* Publisher.swift */; };
 		3D0B77002580468400F31110 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0B76FF2580468400F31110 /* AppDelegate.swift */; };
 		3D0B77022580468400F31110 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0B77012580468400F31110 /* SceneDelegate.swift */; };
 		3D0B77042580468400F31110 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0B77032580468400F31110 /* ViewController.swift */; };
@@ -51,6 +52,7 @@
 		183CA8FB25A75614004745D4 /* MianUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MianUseCase.swift; sourceTree = "<group>"; };
 		183CA90525A756B3004745D4 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		183CA90C25A75B96004745D4 /* Schedular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedular.swift; sourceTree = "<group>"; };
+		183CA91525A7680C004745D4 /* Publisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Publisher.swift; sourceTree = "<group>"; };
 		3D0B76FC2580468400F31110 /* DevChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D0B76FF2580468400F31110 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D0B77012580468400F31110 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 		183CA90325A756A2004745D4 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				183CA91425A767FE004745D4 /* Extension */,
 				183CA90425A756A9004745D4 /* Networking */,
 			);
 			path = Common;
@@ -181,6 +184,14 @@
 				183CA90C25A75B96004745D4 /* Schedular.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		183CA91425A767FE004745D4 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				183CA91525A7680C004745D4 /* Publisher.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		3D0B76F32580468400F31110 = {
@@ -362,6 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				183CA91625A7680C004745D4 /* Publisher.swift in Sources */,
 				3D0B77042580468400F31110 /* ViewController.swift in Sources */,
 				183CA90D25A75B96004745D4 /* Schedular.swift in Sources */,
 				3D0B77002580468400F31110 /* AppDelegate.swift in Sources */,
@@ -550,7 +562,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MB46J93Q7Z;
-				INFOPLIST_FILE = DevChallenge/Info.plist;
+				INFOPLIST_FILE = DevChallenge/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -569,7 +581,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MB46J93Q7Z;
-				INFOPLIST_FILE = DevChallenge/Info.plist;
+				INFOPLIST_FILE = DevChallenge/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

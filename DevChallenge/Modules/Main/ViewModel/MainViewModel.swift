@@ -9,7 +9,7 @@ import Combine
 import Foundation
 
 protocol MainViewModelType {
-    func fetchUsersList()
+    func fetchUsersList() -> AnyPublisher<Result<[JsonPlaceholderModel], APIError>, Never> 
 }
 /// ViewModel
 class MainViewModel {
@@ -33,7 +33,7 @@ class MainViewModel {
 extension MainViewModel: MainViewModelType{
     typealias Output = AnyPublisher<Result<[JsonPlaceholderModel], APIError>, Never>
     
-    func fetchUsersList(){
+    func fetchUsersList() -> AnyPublisher<Result<[JsonPlaceholderModel], APIError>, Never> {
         cancellables.forEach { $0.cancel() }
         cancellables.removeAll()
         
@@ -49,5 +49,7 @@ extension MainViewModel: MainViewModelType{
                 }
             })
             .eraseToAnyPublisher()
+        
+        return Publishers.MergeMany(outPut).eraseToAnyPublisher()
     }
 }

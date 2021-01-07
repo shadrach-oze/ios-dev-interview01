@@ -18,14 +18,15 @@ enum APIError: Error {
 
 protocol APIClientType : AnyObject{
     @discardableResult
-    func execute<T>() -> AnyPublisher<[T], APIError> where T: Decodable
+    func execute<T>() -> AnyPublisher<Result<[T], APIError>, Never> where T: Decodable
 }
 
 final class APIClient: APIClientType {
-
+  
     // MARK: - Function
+    
     @discardableResult
-    func execute<T>() -> AnyPublisher<[T], APIError> where T : Decodable {
+    func execute<T>() -> AnyPublisher<Result<[T], APIError>, Never> where T : Decodable {
         return URLSession.shared.dataTaskPublisher(for: URLRequest(url: URL(string: "")!))
             .mapError { _ in APIError.invalidRequest }
             .print()
@@ -42,9 +43,8 @@ final class APIClient: APIClientType {
             .decode(type: [T].self, decoder: JSONDecoder())
         .map { .success($0) }
         .catch ({ error -> AnyPublisher<Result<[T], APIError>, Never> in
-                return .just(.failure(APIError.jsonDecodingError(error: error)))
+            return .just(.failure(APIError.jsonDecodingError(error: error)))
         })
         .eraseToAnyPublisher()
     }
-
 }
