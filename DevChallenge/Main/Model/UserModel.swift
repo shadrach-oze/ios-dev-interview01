@@ -9,5 +9,10 @@ import Foundation
 
 struct User: Codable {
     let name: String
-    let website: String
+    let url: String
+    
+    enum CodingKeys : String, CodingKey {
+        case url = "website", name
+    }
+
 }

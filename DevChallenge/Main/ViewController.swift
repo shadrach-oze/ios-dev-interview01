@@ -43,7 +43,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: cellReuseIdentifier)
         cell.textLabel?.text = viewModel.users[indexPath.row].name
-        cell.detailTextLabel?.text = viewModel.users[indexPath.row].website
+        cell.detailTextLabel?.text = viewModel.users[indexPath.row].url
         cell.accessoryType = .disclosureIndicator
         return cell
     }
