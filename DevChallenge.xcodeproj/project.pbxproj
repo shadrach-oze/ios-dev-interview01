@@ -15,6 +15,7 @@
 		3D0B770C2580468700F31110 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D0B770A2580468700F31110 /* LaunchScreen.storyboard */; };
 		3D0B77172580468800F31110 /* DevChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0B77162580468800F31110 /* DevChallengeTests.swift */; };
 		3D0B77222580468800F31110 /* DevChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0B77212580468800F31110 /* DevChallengeUITests.swift */; };
+		CDFA25C525B5EA3000C09221 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFA25C425B5EA3000C09221 /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3D0B771D2580468800F31110 /* DevChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DevChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D0B77212580468800F31110 /* DevChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevChallengeUITests.swift; sourceTree = "<group>"; };
 		3D0B77232580468800F31110 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDFA25C425B5EA3000C09221 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +101,9 @@
 		3D0B76FE2580468400F31110 /* DevChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				3D0B76FF2580468400F31110 /* AppDelegate.swift */,
-				3D0B77012580468400F31110 /* SceneDelegate.swift */,
-				3D0B77032580468400F31110 /* ViewController.swift */,
-				3D0B77052580468400F31110 /* Main.storyboard */,
-				3D0B77082580468700F31110 /* Assets.xcassets */,
-				3D0B770A2580468700F31110 /* LaunchScreen.storyboard */,
+				CDFA25C025B5E98600C09221 /* Assets */,
+				CDFA25BE25B5E96F00C09221 /* App */,
+				CDFA25BF25B5E97B00C09221 /* Main */,
 				3D0B770D2580468700F31110 /* Info.plist */,
 			);
 			path = DevChallenge;
@@ -126,6 +125,58 @@
 				3D0B77232580468800F31110 /* Info.plist */,
 			);
 			path = DevChallengeUITests;
+			sourceTree = "<group>";
+		};
+		CDFA25BE25B5E96F00C09221 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3D0B77052580468400F31110 /* Main.storyboard */,
+				3D0B770A2580468700F31110 /* LaunchScreen.storyboard */,
+				3D0B76FF2580468400F31110 /* AppDelegate.swift */,
+				3D0B77012580468400F31110 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CDFA25BF25B5E97B00C09221 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CDFA25C325B5EA2400C09221 /* Model */,
+				CDFA25C225B5E9A500C09221 /* Protocols */,
+				CDFA25C125B5E99F00C09221 /* ViewModel */,
+				3D0B77032580468400F31110 /* ViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CDFA25C025B5E98600C09221 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				3D0B77082580468700F31110 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		CDFA25C125B5E99F00C09221 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CDFA25C225B5E9A500C09221 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CDFA25C325B5EA2400C09221 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CDFA25C425B5EA3000C09221 /* UserModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +312,7 @@
 				3D0B77042580468400F31110 /* ViewController.swift in Sources */,
 				3D0B77002580468400F31110 /* AppDelegate.swift in Sources */,
 				3D0B77022580468400F31110 /* SceneDelegate.swift in Sources */,
+				CDFA25C525B5EA3000C09221 /* UserModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
