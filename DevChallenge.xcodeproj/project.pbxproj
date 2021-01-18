@@ -16,6 +16,8 @@
 		3D0B77172580468800F31110 /* DevChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0B77162580468800F31110 /* DevChallengeTests.swift */; };
 		3D0B77222580468800F31110 /* DevChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0B77212580468800F31110 /* DevChallengeUITests.swift */; };
 		CDFA25C525B5EA3000C09221 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFA25C425B5EA3000C09221 /* UserModel.swift */; };
+		CDFA25D025B5EA5400C09221 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFA25CF25B5EA5400C09221 /* UserViewModel.swift */; };
+		CDFA25D525B5EA9000C09221 /* DataFetchProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFA25D425B5EA9000C09221 /* DataFetchProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		3D0B77212580468800F31110 /* DevChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevChallengeUITests.swift; sourceTree = "<group>"; };
 		3D0B77232580468800F31110 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDFA25C425B5EA3000C09221 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		CDFA25CF25B5EA5400C09221 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		CDFA25D425B5EA9000C09221 /* DataFetchProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetchProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +164,7 @@
 		CDFA25C125B5E99F00C09221 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				CDFA25CF25B5EA5400C09221 /* UserViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -167,6 +172,7 @@
 		CDFA25C225B5E9A500C09221 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				CDFA25D425B5EA9000C09221 /* DataFetchProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -312,6 +318,8 @@
 				3D0B77042580468400F31110 /* ViewController.swift in Sources */,
 				3D0B77002580468400F31110 /* AppDelegate.swift in Sources */,
 				3D0B77022580468400F31110 /* SceneDelegate.swift in Sources */,
+				CDFA25D025B5EA5400C09221 /* UserViewModel.swift in Sources */,
+				CDFA25D525B5EA9000C09221 /* DataFetchProtocol.swift in Sources */,
 				CDFA25C525B5EA3000C09221 /* UserModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
