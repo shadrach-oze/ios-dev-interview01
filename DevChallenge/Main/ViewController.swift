@@ -63,6 +63,8 @@ extension ViewController: DataFetchProtocol {
     }
     
     func onFetchFailed(error: Error) {
-        
+        DispatchQueue.main.async {
+            self.showAlert(title: "Oops!", message: error.localizedDescription)
+        }
     }
 }

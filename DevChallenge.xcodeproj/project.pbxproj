@@ -15,6 +15,7 @@
 		3D0B770C2580468700F31110 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D0B770A2580468700F31110 /* LaunchScreen.storyboard */; };
 		3D0B77172580468800F31110 /* DevChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0B77162580468800F31110 /* DevChallengeTests.swift */; };
 		3D0B77222580468800F31110 /* DevChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0B77212580468800F31110 /* DevChallengeUITests.swift */; };
+		CD924DE525B5ED6100BAA4DE /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD924DE425B5ED6100BAA4DE /* UIViewController+Extension.swift */; };
 		CDFA25C525B5EA3000C09221 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFA25C425B5EA3000C09221 /* UserModel.swift */; };
 		CDFA25D025B5EA5400C09221 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFA25CF25B5EA5400C09221 /* UserViewModel.swift */; };
 		CDFA25D525B5EA9000C09221 /* DataFetchProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFA25D425B5EA9000C09221 /* DataFetchProtocol.swift */; };
@@ -52,6 +53,7 @@
 		3D0B771D2580468800F31110 /* DevChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DevChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D0B77212580468800F31110 /* DevChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevChallengeUITests.swift; sourceTree = "<group>"; };
 		3D0B77232580468800F31110 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD924DE425B5ED6100BAA4DE /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		CDFA25C425B5EA3000C09221 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		CDFA25CF25B5EA5400C09221 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		CDFA25D425B5EA9000C09221 /* DataFetchProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetchProtocol.swift; sourceTree = "<group>"; };
@@ -131,6 +133,14 @@
 			path = DevChallengeUITests;
 			sourceTree = "<group>";
 		};
+		CD924DE325B5ED4D00BAA4DE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CD924DE425B5ED6100BAA4DE /* UIViewController+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		CDFA25BE25B5E96F00C09221 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +155,7 @@
 		CDFA25BF25B5E97B00C09221 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				CD924DE325B5ED4D00BAA4DE /* Extension */,
 				CDFA25C325B5EA2400C09221 /* Model */,
 				CDFA25C225B5E9A500C09221 /* Protocols */,
 				CDFA25C125B5E99F00C09221 /* ViewModel */,
@@ -319,6 +330,7 @@
 				3D0B77002580468400F31110 /* AppDelegate.swift in Sources */,
 				3D0B77022580468400F31110 /* SceneDelegate.swift in Sources */,
 				CDFA25D025B5EA5400C09221 /* UserViewModel.swift in Sources */,
+				CD924DE525B5ED6100BAA4DE /* UIViewController+Extension.swift in Sources */,
 				CDFA25D525B5EA9000C09221 /* DataFetchProtocol.swift in Sources */,
 				CDFA25C525B5EA3000C09221 /* UserModel.swift in Sources */,
 			);
