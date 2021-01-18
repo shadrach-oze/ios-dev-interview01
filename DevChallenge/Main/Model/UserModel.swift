@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct User: Codable {
+    let name: String
+    let website: String
+}

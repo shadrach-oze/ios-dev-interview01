@@ -9,5 +9,5 @@ import Foundation
 
 protocol DataFetchProtocol {
     func onFetchCompleted()
-    func onFetchFailed()
+    func onFetchFailed(error: Error)
 }
