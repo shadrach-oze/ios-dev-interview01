@@ -15,6 +15,7 @@
 		3D0B770C2580468700F31110 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D0B770A2580468700F31110 /* LaunchScreen.storyboard */; };
 		3D0B77172580468800F31110 /* DevChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0B77162580468800F31110 /* DevChallengeTests.swift */; };
 		3D0B77222580468800F31110 /* DevChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0B77212580468800F31110 /* DevChallengeUITests.swift */; };
+		E6436CF625BCB8B500B42662 /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6436CF525BCB8B500B42662 /* ResponseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3D0B771D2580468800F31110 /* DevChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DevChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D0B77212580468800F31110 /* DevChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevChallengeUITests.swift; sourceTree = "<group>"; };
 		3D0B77232580468800F31110 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6436CF525BCB8B500B42662 /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				3D0B77082580468700F31110 /* Assets.xcassets */,
 				3D0B770A2580468700F31110 /* LaunchScreen.storyboard */,
 				3D0B770D2580468700F31110 /* Info.plist */,
+				E6436CF525BCB8B500B42662 /* ResponseModel.swift */,
 			);
 			path = DevChallenge;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			files = (
 				3D0B77042580468400F31110 /* ViewController.swift in Sources */,
 				3D0B77002580468400F31110 /* AppDelegate.swift in Sources */,
+				E6436CF625BCB8B500B42662 /* ResponseModel.swift in Sources */,
 				3D0B77022580468400F31110 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,13 +441,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MB46J93Q7Z;
+				DEVELOPMENT_TEAM = RFYDNQN4JF;
 				INFOPLIST_FILE = DevChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.codesworth.DevChallenge;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codesworth.DevChallenge1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -456,13 +460,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MB46J93Q7Z;
+				DEVELOPMENT_TEAM = RFYDNQN4JF;
 				INFOPLIST_FILE = DevChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.codesworth.DevChallenge;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codesworth.DevChallenge1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
